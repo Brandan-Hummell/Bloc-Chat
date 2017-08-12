@@ -13,30 +13,70 @@
     
     body {
         font-family: 'Open Sans';
-        color: white;
+        color: black;
         min-height: 100%;
     }
     
     .roomsBar {
-        display: inline-block;
+        float: left;
+        color: white;
         box-sizing: border-box;
         min-width: 15rem;
         height: 100vh;
-        background-color: slategray;
+        background-color: darkslategray;
         border-right: 1px solid black;
     }
     
     .roomListTitle {
-        width: 100%;
         text-align: center;
-        margin-bottom: 5rem;
+        margin-bottom: 1rem;
         font-size: 2.5rem;
     }
     
     .roomListItem {
+        margin-left: -2.5rem;
+        padding-left: 2.5rem;
         min-height: 3rem;
         list-style: none;
         font-weight: 900;
         font-size: 1.5rem;
         margin-top: 2rem;
+        line-height: 50px;
+    }
+    
+    .roomListItem:hover {
+        background-color: crimson;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        cursor: pointer;
+    }
+    
+    .addRoomButton {
+        margin-left: 2rem;
+        margin-bottom: 3rem;
+    }
+    
+    .modal {
+        display: block;
+    }
+    
+    .modal-body:before,
+    .modal-body:after {
+        display: table;
+        content: " ";
+    }
+    
+    .modal-header:before,
+    .modal-header:after {
+        display: table;
+        content: " ";
+    }
+    
+    .messageDisplay {
+        display: inline-block;
+        text-align: top;
+    }
+    
+    .messageDisplay {
+        padding-left: 1rem;
     }

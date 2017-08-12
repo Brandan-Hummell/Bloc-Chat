@@ -5,7 +5,10 @@
                 animation: this.animationsEnabled,
                 templateUrl: '/templates/modal.html',
                 controller: 'ModalInstanceCtrl',
-                controllerAs: 'modal'
+                controllerAs: 'modal',
+                uibModalWindow: 'modal-window',
+                size: '250px',
+                windowClass: "modal"
 
             });
 

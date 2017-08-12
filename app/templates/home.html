@@ -1,9 +1,15 @@
-<nav class="roomsBar">
-    <h1 class="roomListTitle">Bloc Chat</h1>
-    <div ng-controller="ModalCtrl as modal">
-        <button ng-click="modal.open()">Add Room</button>
-    </div>
-    <ul>
-        <li class="roomListItem" ng-repeat="room in home.rooms">{{ room.$value }}</li>
-    </ul>
-</nav>
+<section>
+    <nav class="roomsBar">
+        <h1 class="roomListTitle">Bloc Chat</h1>
+        <div ng-controller="ModalCtrl as modal">
+            <button class="addRoomButton" ng-click="modal.open()">Add Room</button>
+        </div>
+        <ul>
+            <li class="roomListItem" ng-repeat="room in home.rooms" ng-click="home.changeActiveRoom(room)">{{ room.$value }}</li>
+        </ul>
+    </nav>
+    <section class='messageDisplay'>
+        <h2 class='messageRoomTitle'>Active Room: {{ activeRoom.$value }}</h2>
+        <span ng-repeat="message in activeRoomMessages"><h3>{{  message.username  }}</h3><p>{{  message.content  }}</p></span>
+    </section>
+</section>
