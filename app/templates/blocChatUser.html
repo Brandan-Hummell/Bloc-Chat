@@ -1,0 +1,18 @@
+<div class="modal">
+    <div class="modal-header">
+        <h2 class="modal-title">Set Your User Name</h2>
+    </div>
+    <div class="modal-body">
+        Enter a user name:
+        <form ng-submit="ok()">
+            <div class="input-group animated fadeIn">
+                <input type="text" class="form-control finderBar" ng-model="name" name="name" title="name" placeholder="Your room name here" autofocus>
+                <h4>{{ name }}</h4>
+            </div>
+        </form>
+
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" type="button" ng-click="ok()">Set Username</button>
+    </div>
+</div>

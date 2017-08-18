@@ -10,6 +10,11 @@
     </nav>
     <section class='messageDisplay'>
         <h2 class='messageRoomTitle'>Active Room: {{ activeRoom.$value }}</h2>
-        <span ng-repeat="message in activeRoomMessages"><h3>{{  message.username  }}</h3><p>{{  message.content  }}</p></span>
+        <table>
+            <tr ng-repeat="message in activeRoomMessages" class="messageRows">
+                <td class="messageUsername">{{ message.username }}: </td>
+                <td class="messageContent">{{ message.content }}</td>
+            </tr>
+        </table>
     </section>
 </section>

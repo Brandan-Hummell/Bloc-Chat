@@ -80,3 +80,16 @@
     .messageDisplay {
         padding-left: 1rem;
     }
+    
+    .messageRows:nth-child(odd) {
+        background-color: lightgrey;
+    }
+    
+    .messageUsername {
+        font-size: 1.5rem;
+        padding: .5rem 1rem .5rem .5rem;
+    }
+    
+    .messageContent {
+        font-size: 1rem;
+    }
