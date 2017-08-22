@@ -11,7 +11,13 @@
             roomId = room.$id;
             $scope.activeRoomMessages = Message.getByRoomId(roomId);
         };
+
+        this.sendMessage = function(name) {
+            var currentRoomId = $scope.activeRoom.$id;
+            Message.send(name, currentRoomId);
+        };
     }
+
 
     angular
         .module('blocChat')

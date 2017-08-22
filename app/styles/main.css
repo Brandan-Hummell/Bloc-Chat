@@ -93,3 +93,30 @@
     .messageContent {
         font-size: 1rem;
     }
+    
+    .sendMessageForm {
+        position: fixed;
+        bottom: 0;
+        left: 15rem;
+        right: 0;
+        margin-bottom: -1.8rem;
+    }
+    
+    .sendMessageText {
+        width: 90%;
+    }
+    
+    input[type=text] {
+        line-height: 3rem;
+        height: 2rem;
+    }
+    
+    .sendMessageSubmit {
+        height: 2rem;
+        min-width: 9%;
+        margin-bottom: 7px;
+        margin-left: -4px;
+        background-color: darkslategray;
+        color: white;
+        border: 0;
+    }
