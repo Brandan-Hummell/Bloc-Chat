@@ -7,14 +7,16 @@
                 $scope.activeRoom = {};
                 $scope.activeRoomMessages = [];
             };
+            this.newMessage = "";
             $scope.activeRoom = room;
             roomId = room.$id;
             $scope.activeRoomMessages = Message.getByRoomId(roomId);
         };
 
-        this.sendMessage = function(name) {
+        this.sendMessage = function() {
             var currentRoomId = $scope.activeRoom.$id;
-            Message.send(name, currentRoomId);
+            Message.send(this.newMessage, currentRoomId);
+            this.newMessage = "";
         };
     }
 

@@ -19,8 +19,8 @@
     </section>
     <section class="sendMessageForm">
         <form ng-if="activeRoom.$value">
-            <input type="text" ng-model="newMessage" placeholder="Enter your message here..." class="sendMessageText">
-            <input type="submit" id="Submit" value="Send" ng-click="home.sendMessage(newMessage)" class="sendMessageSubmit">
+            <input type="text" ng-model="home.newMessage" placeholder="Enter your message here..." class="sendMessageText">
+            <input type="submit" id="Submit" value="Send" ng-click="home.sendMessage()" class="sendMessageSubmit">
         </form>
     </section>
 </section>
