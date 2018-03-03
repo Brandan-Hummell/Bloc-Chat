@@ -1,15 +1,15 @@
 # README
-# Bloc Chat
+# Quick Chat
 
-Bloc Chat is a AngularJS based chat room application. I am responsible for the coding, layout, and design of Bloc Chat.
+Quick Chat is a AngularJS based chat room application. I am responsible for the coding, layout, and design of Quick Chat.
 
 Users create an account and log in with their user name. Displayed messages will include the username to which they belong. Each user has the opportunity to create a new chat room, or use any of the existing ones.
 
-Bloc Chat uses Google Firebase as a database to store user log ins, chat rooms, and the associated messages. While I am not sure how well Firebase would scale, it worked beautifully for an application of this size, and relating the data (messages belonging to users and rooms for example) was a fairly simple process.
+Quick Chat uses Google Firebase as a database to store user log ins, chat rooms, and the associated messages. While I am not sure how well Firebase would scale, it worked beautifully for an application of this size, and relating the data (messages belonging to users and rooms for example) was a fairly simple process.
 
 ## Getting Started
 
-These instructions will help you set up Bloc Chat on your local machine for development and testing purposes. 
+These instructions will help you set up Quick Chat on your local machine for development and testing purposes. 
 
 ### Prerequisites & Installation
 
@@ -18,7 +18,7 @@ These instructions will help you set up Bloc Chat on your local machine for deve
 Start by pulling the repository:
 
 ```
-$ git add remote origin https://github.com/Brandan-Hummell/bloc-chat.git
+$ git add remote origin https://github.com/Brandan-Hummell/quick-chat.git
 $ git pull 
 $ git pull origin master
 ```
