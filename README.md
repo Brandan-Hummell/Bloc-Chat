@@ -3,9 +3,9 @@
 
 Quick Chat is a AngularJS based chat room application. I am responsible for the coding, layout, and design of Quick Chat.
 
-Users create an account and log in with their user name. Displayed messages will include the username to which they belong. Each user has the opportunity to create a new chat room, or use any of the existing ones.
+Users choose a display name when the application launches. Displayed messages will include the username to which they belong. Each user has the opportunity to create a new chat room, or use any of the existing ones.
 
-Quick Chat uses Google Firebase as a database to store user log ins, chat rooms, and the associated messages. While I am not sure how well Firebase would scale, it worked beautifully for an application of this size, and relating the data (messages belonging to users and rooms for example) was a fairly simple process.
+Quick Chat uses Google Firebase as a database to store chat rooms and the associated messages. While I am not sure how well Firebase would scale, it worked beautifully for an application of this size, and relating the data (messages belonging to users and rooms for example) was a fairly simple process.
 
 ## Getting Started
 
