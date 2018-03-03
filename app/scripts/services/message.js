@@ -14,7 +14,7 @@
         Message.send = function(newMessage, roomId) {
             var currentRoomId = roomId;
             var currentDate = new Date();
-            var currentUser = $cookies.get('blocChatCurrentUser');
+            var currentUser = $cookies.get('quickChatCurrentUser');
             var newMessageObject = {
                 content: newMessage,
                 roomId: currentRoomId,
@@ -34,6 +34,6 @@
     }
 
     angular
-        .module('blocChat')
+        .module('quickChat')
         .factory('Message', ['$firebaseArray', '$cookies', Message]);
 })();

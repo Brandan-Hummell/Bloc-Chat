@@ -12,6 +12,6 @@
     }
 
     angular
-        .module('blocChat')
+        .module('quickChat')
         .controller('ModalInstanceCtrl', ['$uibModalInstance', ModalInstanceCtrl]);
 })();

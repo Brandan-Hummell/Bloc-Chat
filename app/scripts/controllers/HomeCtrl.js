@@ -22,6 +22,6 @@
 
 
     angular
-        .module('blocChat')
+        .module('quickChat')
         .controller('HomeCtrl', ['$scope', 'Room', 'Message', HomeCtrl]);
 })();

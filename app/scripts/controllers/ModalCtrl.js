@@ -26,6 +26,6 @@
     }
 
     angular
-        .module('blocChat')
+        .module('quickChat')
         .controller('ModalCtrl', ['$uibModal', '$log', 'Room', ModalCtrl]);
 })();

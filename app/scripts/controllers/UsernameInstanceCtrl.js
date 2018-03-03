@@ -6,6 +6,6 @@
     }
 
     angular
-        .module('blocChat')
+        .module('quickChat')
         .controller('UsernameInstanceCtrl', ['$uibModalInstance', '$cookies', '$scope', UsernameInstanceCtrl]);
 })();

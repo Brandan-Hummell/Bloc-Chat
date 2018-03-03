@@ -15,12 +15,12 @@
             });
     }
 
-    function BlocChatCookies($uibModal, $cookies) {
-        var currentUser = $cookies.get('blocChatCurrentUser');
+    function quickChatCookies($uibModal, $cookies) {
+        var currentUser = $cookies.get('quickChatCurrentUser');
         if (!currentUser || currentUser === '') {
             $uibModal.open({
                 animation: this.animationsEnabled,
-                templateUrl: '/templates/blocChatUser.html',
+                templateUrl: '/templates/quickChatUser.html',
                 controller: 'UsernameInstanceCtrl',
                 controllerAs: 'ctrl',
                 backdrop: 'static',
@@ -30,8 +30,8 @@
                 windowClass: "modal"
             }).result.then(function(name) {
                 this.username = name;
-                $cookies.put('blocChatCurrentUser', this.username);
-                var currentUser = $cookies.get('blocChatCurrentUser');
+                $cookies.put('quickChatCurrentUser', this.username);
+                var currentUser = $cookies.get('quickChatCurrentUser');
                 console.log(currentUser);
             });
         }
@@ -40,7 +40,7 @@
 
 
     angular
-        .module('blocChat', ['ui.router', 'firebase', 'ui.bootstrap', 'ngCookies'])
+        .module('quickChat', ['ui.router', 'firebase', 'ui.bootstrap', 'ngCookies'])
         .config(config)
-        .run(['$uibModal', '$cookies', BlocChatCookies]);
+        .run(['$uibModal', '$cookies', quickChatCookies]);
 })();
